@@ -26,3 +26,6 @@ map <C-t> :tabnew<cr>
 map <C-d> :tabc<cr>
 map <C-o> :tabe
 map <C-p> :tabp<cr>
+
+noremap ; l
+noremap l h
