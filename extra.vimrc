@@ -35,3 +35,9 @@ endif
 "  Bundle 'repo/github'
 "endif
 "" }}}
+
+" _. fugitive {{{
+if count(g:vimified_packages, 'fugitive')
+    Bundle 'tpope/vim-fugitive'
+endif
+" }}}
