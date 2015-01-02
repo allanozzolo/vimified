@@ -29,3 +29,9 @@ map <C-p> :tabp<cr>
 
 "noremap ; l
 "noremap l h
+
+" dizionario ita
+setlocal spell spelllang=it
+
+" solo gvim
+setlocal mousemodel=popup
