@@ -41,3 +41,13 @@ if count(g:vimified_packages, 'fugitive')
     Bundle 'tpope/vim-fugitive'
 endif
 " }}}
+
+" _. trascrittore {{{
+if count(g:vimified_packages, 'trascrittore')
+    inoremap <Leader>g GIUDICE
+    inoremap <Leader>t TESTE
+    inoremap <Leader>i IMPUTATO
+    inoremap <Leader>a AVVOCATO
+    imap e' è
+endif
+" }}}
