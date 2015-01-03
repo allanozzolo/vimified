@@ -3,6 +3,12 @@ noremap <up> <up>
 noremap <down> <down>
 noremap <right> <right>
 
+" Smart way to move between windows
+map <C-up> <C-W><up>
+map <C-down> <C-W><down>
+map <C-left> <C-W><left>
+map <C-right> <C-W><right>
+
 set norelativenumber
 set number
 
@@ -30,8 +36,12 @@ map <C-p> :tabp<cr>
 "noremap ; l
 "noremap l h
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Spell checking
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " dizionario ita
 setlocal spell spelllang=it
-
 " solo gvim
 setlocal mousemodel=popup
+" Pressing ,ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
