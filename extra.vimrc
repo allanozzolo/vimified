@@ -42,12 +42,21 @@ if count(g:vimified_packages, 'fugitive')
 endif
 " }}}
 
-" _. trascrittore {{{
-if count(g:vimified_packages, 'trascrittore')
-    inoremap <Leader>g GIUDICE
-    inoremap <Leader>t TESTE
-    inoremap <Leader>i IMPUTATO
-    inoremap <Leader>a AVVOCATO
-    imap e' è
-endif
-" }}}
+"" Funzionalità trasferite su autokey
+"" _. trascrittore {{{
+"if count(g:vimified_packages, 'trascrittore')
+"    inoremap <Leader>g <C-[>oGIUDICE -
+"    inoremap <Leader>t <C-[>oTESTE -
+"    inoremap <Leader>i <C-[>oIMPUTATO -
+"    inoremap <Leader>a <C-[>oAVVOCATO -
+"    inoremap <Leader>d <C-[>oAVV. DIFESA -
+"    inoremap <Leader>c <C-[>oAVV. PARTE CIVILE -
+"    inoremap <Leader>pr <C-[>oPRESIDENTE -
+"    inoremap <Leader>p <C-[>oP.M. -
+"    imap e' è
+"    imap a' à
+"    imap o' ò
+"    imap u' ù
+"    imap i' ì
+"endif
+"" }}}
