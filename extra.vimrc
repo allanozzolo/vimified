@@ -9,20 +9,6 @@ if count(g:vimified_packages, 'latex')
 endif
 " }}}
 "
-" _. nerdtreetabs {{{
-if count(g:vimified_packages, 'nerdtreetabs')
-  Bundle 'scrooloose/nerdtree'
-  Bundle 'jistr/vim-nerdtree-tabs'
-  map <Leader>n <plug>NERDTreeTabsToggle<CR>
-  nmap <C-i> <plug>NERDTreeTabsToggle<CR>
-  " Disable the scrollbars (NERDTree)
-  set guioptions-=r
-  set guioptions-=L
-  " Keep NERDTree window fixed between multiple toggles
-  set winfixwidth
-  endif
-" }}}
-
 " _. allanon_html {{{
 if count(g:vimified_packages, 'allanon_html')
   Bundle 'tpope/vim-markdown'
@@ -60,3 +46,19 @@ endif
 "    imap i' ì
 "endif
 "" }}}
+
+
+" _. allanon_general {{{
+if count(g:vimified_packages, 'allanon_general')
+    Bundle 'tpope/vim-surround'
+    Bundle 'scrooloose/nerdtree'
+    Bundle 'jistr/vim-nerdtree-tabs'
+    map <Leader>n <plug>NERDTreeTabsToggle<CR>
+    nmap <C-i> <plug>NERDTreeTabsToggle<CR>
+    " Disable the scrollbars (NERDTree)
+    set guioptions-=r
+    set guioptions-=L
+    " Keep NERDTree window fixed between multiple toggles
+    set winfixwidth
+endif
+" }}}
