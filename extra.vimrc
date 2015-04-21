@@ -11,7 +11,8 @@ endif
 "
 " _. allanon_html {{{
 if count(g:vimified_packages, 'allanon_html')
-  Bundle 'tpope/vim-markdown'
+  " non serve nelle recenti versioni di vim...
+  "Bundle 'tpope/vim-markdown'
   au BufNewFile,BufReadPost *.html setl shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 endif
 " }}}
@@ -28,25 +29,12 @@ if count(g:vimified_packages, 'fugitive')
 endif
 " }}}
 
-"" Funzionalità trasferite su autokey
-"" _. trascrittore {{{
-"if count(g:vimified_packages, 'trascrittore')
-"    inoremap <Leader>g <C-[>oGIUDICE -
-"    inoremap <Leader>t <C-[>oTESTE -
-"    inoremap <Leader>i <C-[>oIMPUTATO -
-"    inoremap <Leader>a <C-[>oAVVOCATO -
-"    inoremap <Leader>d <C-[>oAVV. DIFESA -
-"    inoremap <Leader>c <C-[>oAVV. PARTE CIVILE -
-"    inoremap <Leader>pr <C-[>oPRESIDENTE -
-"    inoremap <Leader>p <C-[>oP.M. -
-"    imap e' è
-"    imap a' à
-"    imap o' ò
-"    imap u' ù
-"    imap i' ì
-"endif
-"" }}}
-
+" _. markdown {{{
+if count(g:vimified_packages, 'markdown')
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
+endif
+" }}}
 
 " _. allanon_general {{{
 if count(g:vimified_packages, 'allanon_general')
