@@ -1,2 +1,2 @@
 "let g:vimified_packages = ['general', 'coding', 'clojure', 'color', 'python', 'indent', 'fancy']
-let g:vimified_packages = ['allanon_general', 'latex', 'color', 'python', 'indent', 'fancy', 'fugitive', 'markdown']
+let g:vimified_packages = ['allanon_general', 'latex', 'color', 'python', 'indent', 'fancy', 'fugitive', 'pelican']

@@ -37,12 +37,24 @@ if count(g:vimified_packages, 'fugitive')
 endif
 " }}}
 
-" _. markdown {{{
-if count(g:vimified_packages, 'markdown')
+" _. pelican {{{
+if count(g:vimified_packages, 'pelican')
+" utility per tabelle
 Bundle 'godlygeek/tabular'
+" utility per markdown
+" es.: toc e altro
 Bundle 'plasticboy/vim-markdown'
+" ultisnips
+Bundle 'sirver/UltiSnips'
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-y>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 endif
-" }}}
+ " }}}
 
 " _. allanon_general {{{
 if count(g:vimified_packages, 'allanon_general')
