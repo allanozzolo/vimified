@@ -45,3 +45,6 @@ setlocal spell spelllang=it
 setlocal mousemodel=popup
 " Pressing ,ss will toggle and untoggle spell checking
 map <leader>ss :setlocal spell!<cr>
+""""""""""""""
+" non so perche' il plugin per python lo disabilita..
+set formatoptions+=t
