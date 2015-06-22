@@ -48,3 +48,7 @@ map <leader>ss :setlocal spell!<cr>
 """"""""""""""
 " non so perche' il plugin per python lo disabilita..
 set formatoptions+=t
+
+" swap files
+set dir=~/tmp
+set swapfile
