@@ -68,5 +68,6 @@ if count(g:vimified_packages, 'allanon_general')
     set guioptions-=L
     " Keep NERDTree window fixed between multiple toggles
     set winfixwidth
+    let g:nerdtree_tabs_open_on_gui_startup = 0
 endif
 " }}}
