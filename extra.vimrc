@@ -9,6 +9,7 @@ if count(g:vimified_packages, 'latex')
   "custom environment
   let g:Tex_Env_wrapfigure = "\\begin{wrapfigure}[<+12+>]{<+rlioRLIO+>}[<+34pt+>]{<+width+>}\<cr>\\centering\<cr>\\includegraphics[height=<+0.5+>\\textheight]{<+img file+>}\<cr>\\caption{<+caption text+>}\<cr>\\label{<+label+>}\<cr>\\end{wrapfigure}"
   let g:Tex_Env_figure = "\\begin{figure}[<+htpb+>]\<cr>\\centering\<cr>\\includegraphics[height=<+0.5+>\\textheight]{<+img file+>}\<cr>\\caption{<+caption text+>}\<cr>\\label{<+label+>}\<cr>\\end{figure}"
+  let g:Tex_Env_frame = "\\begin{frame}{<++ title frame ++>}\<cr><++ content frame ++>\<cr>\\end{frame}"
 endif
 " }}}
 "
